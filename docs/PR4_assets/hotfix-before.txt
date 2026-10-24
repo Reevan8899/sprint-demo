@@ -1,0 +1,14 @@
+F....                                                                    [100%]
+================================== FAILURES ===================================
+______________ test_equal_passwords_have_different_salted_hashes ______________
+
+    def test_equal_passwords_have_different_salted_hashes():
+        auth.register("one@example.com", "same-password")
+        auth.register("two@example.com", "same-password")
+>       assert auth._users["one@example.com"] != auth._users["two@example.com"]
+E       AssertionError: assert 'c610a28bf1105e347ce17736bd9bd19201f027f79d339f01e0cd01d86f8fb74e' != 'c610a28bf1105e347ce17736bd9bd19201f027f79d339f01e0cd01d86f8fb74e'
+
+tests\test_auth_security.py:17: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_auth_security.py::test_equal_passwords_have_different_salted_hashes
+1 failed, 4 passed in 0.07s

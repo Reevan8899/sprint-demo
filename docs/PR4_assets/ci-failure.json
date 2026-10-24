@@ -1,0 +1,12 @@
+{
+  "pr": 2,
+  "mergeable_state": "blocked",
+  "checks": [
+    {
+      "name": "lint-and-tests",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/Reevan8899/sprint-demo/actions/runs/40099953810/job/120889876257"
+    }
+  ]
+}

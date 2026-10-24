@@ -1,0 +1,14 @@
+  feature/cart
+  feature/checkout
+  feature/order-history
+* feature/product-catalog
+  feature/user-auth
+  main
+  sprint-1
+  remotes/origin/feature/cart
+  remotes/origin/feature/checkout
+  remotes/origin/feature/order-history
+  remotes/origin/feature/product-catalog
+  remotes/origin/feature/user-auth
+  remotes/origin/main
+  remotes/origin/sprint-1

@@ -45,3 +45,14 @@ python -m ruff check .
 ## Лицензия
 
 MIT, см. [LICENSE](LICENSE).
+
+
+## Материалы практики
+
+- [Отчёт Киреева А. С.](docs/PR4_Отчёт_Киреев.md)
+- [Sprint Review](docs/sprint-review-1.md)
+- [Retrospective](docs/retro-sprint-1.md)
+- [Первый релиз v0.1.0](https://github.com/Reevan8899/sprint-demo/releases/tag/v0.1.0)
+- [Исправление v0.1.1](https://github.com/Reevan8899/sprint-demo/releases/tag/v0.1.1)
+
+Отчёт фиксирует индивидуальный формат: роли совмещены, внешнего approval нет.

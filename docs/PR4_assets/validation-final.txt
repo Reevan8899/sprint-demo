@@ -1,0 +1,36 @@
+All checks passed!
+
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0
+rootdir: <project-root>
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0
+collected 74 items
+
+tests\test_auth.py ...............                                       [ 20%]
+tests\test_auth_security.py ......                                       [ 28%]
+tests\test_cart.py ..........                                            [ 41%]
+tests\test_catalog.py ........                                           [ 52%]
+tests\test_checkout.py ............                                      [ 68%]
+tests\test_integration.py ..                                             [ 71%]
+tests\test_orders.py .......                                             [ 81%]
+tests\test_validation.py ..............                                  [100%]
+
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.12.14-final-0 _______________
+
+Name                Stmts   Miss Branch BrPart  Cover   Missing
+---------------------------------------------------------------
+src\__init__.py         0      0      0      0   100%
+src\auth.py            45      0     14      0   100%
+src\cart.py            19      0      6      0   100%
+src\catalog.py         10      0      6      0   100%
+src\checkout.py        21      0      8      0   100%
+src\orders.py          10      0      6      0   100%
+src\validation.py      13      0     10      0   100%
+---------------------------------------------------------------
+TOTAL                 118      0     50      0   100%
+Coverage JSON written to file coverage.json
+Required test coverage of 80.0% reached. Total coverage: 100.00%
+============================= 74 passed in 3.43s ==============================
