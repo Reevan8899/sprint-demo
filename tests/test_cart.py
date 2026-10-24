@@ -45,3 +45,16 @@ def test_clear_and_empty_total():
     clear_cart()
     assert get_cart() == []
     assert total_price() == 0
+
+
+
+def test_input_and_output_are_independent_snapshots():
+    product = dict(PRODUCT)
+    add_to_cart(product, 2)
+    product["price"] = 1
+    snapshot = get_cart()
+    snapshot[0]["quantity"] = 999
+    snapshot[0]["product"]["name"] = "Подмена"
+    assert total_price() == 150000
+    assert get_cart()[0]["quantity"] == 2
+    assert get_cart()[0]["product"]["name"] == "Ноутбук"
