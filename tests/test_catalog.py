@@ -17,3 +17,12 @@ def test_get_product_by_id():
 def test_unknown_or_invalid_id(product_id):
     with pytest.raises(KeyError):
         get_product(product_id)
+
+
+
+def test_returned_products_cannot_mutate_catalog():
+    products = list_products()
+    products[0]["price"] = 1
+    get_product(1)["name"] = "Подмена"
+    assert get_product(1)["price"] == 75000
+    assert get_product(1)["name"] == "Ноутбук"
